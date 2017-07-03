@@ -18,7 +18,7 @@ bot.on ("message", function(message) {
 
   switch (arg[0].toLowerCase()) {
     case "hello":
-      message.channel.sendMessage("Hey!");
+      message.channel.sendMessage("Hey" + message.author.toString() + "!");
       break;
     case "info":
       message.channel.sendMessage("I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
