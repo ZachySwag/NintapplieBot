@@ -10,7 +10,7 @@ bot.on("ready", function() {
 });
 
 bot.on("message", function(message) {
-  member.build.channels.find("name", "general").sendMessage(member.toString() + " Welcome to the NintappleYT Official Discord! You now have the role of Member, and you have basic permissions.");
+  member.build.channels.find("name", "general-chat").sendMessage(member.toString() + " Welcome to the NintappleYT Official Discord! You now have the role of Member, and you have basic permissions.");
 
   member.addRole(member.guild.roles.find("name", "(Members) The Freshest Squids"));
 };
