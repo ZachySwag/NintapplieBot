@@ -18,12 +18,13 @@ bot.on ("message", function(message) {
 
   switch (arg[0].toLowerCase()) {
     case "hello":
-      message.channel.sendMessage("Hey" + message.author.toString() + "!");
+      message.channel.sendMessage("Hey " + message.author.toString() + "!");
       break;
     case "info":
-      message.channel.sendMessage("I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
+      message.channel.sendMessage(message.author.toString() + " I am the very best bot, like no bot ever was. I was programmed by a boy who caught them all. (No not Ash Ketchum)");
       break;
     case "help":
+      message.channel.sendMessage(message.author.toString() + " Here is a list of commands:");
       var embed = new Discord.RichEmbed()
         .addField("$hello:", "Say hi to me!")
         .addField("$info:", "Find out who I am!");
