@@ -31,7 +31,7 @@ bot.on ("message", function(message) {
       message.channel.sendEmbed(embed);
       break;
     default:
-      message.channel.sendMessage("I don't recognise what you're trying to tell me. Type $help for a list of commands.");
+      message.channel.sendMessage(message.author.toString() + "I don't recognise what you're trying to tell me. Type $help for a list of commands.");
   }
 });
 
