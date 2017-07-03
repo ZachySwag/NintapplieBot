@@ -5,6 +5,8 @@ const PREFIX = "$";
 
 var bot = new Discord.Client();
 
+client.User.setGame("say $help");
+
 bot.on("ready", function() {
   console.log("I am ready");
 });
