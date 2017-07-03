@@ -27,6 +27,7 @@ bot.on ("message", function(message) {
       var embed = new Discord.RichEmbed()
         .addField("$hello:", "Say hi to me!")
         .addField("$info:", "Find out who I am!");
+        .setColor(red)
       message.channel.sendEmbed(embed);
       break;
     default:
